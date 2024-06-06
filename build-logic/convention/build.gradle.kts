@@ -30,5 +30,21 @@ gradlePlugin {
          id = "tracking.android.library.compose"
          implementationClass = "AndroidLibraryComposeConventionPlugin"
       }
+      register("androidFeatureUi"){
+         id = "tracking.android.feature.ui"
+         implementationClass = "AndroidFeatureUiConventionPlugin"
+      }
+      register("androidRoom"){
+         id = "tracking.android.room"
+         implementationClass = "AndroidRoomConventionPlugin"
+      }
+      register("jvmLibrary"){
+         id = "tracking.jvm.library"
+         implementationClass = "JvmLibraryConventionPlugin"
+      }
+      register("jvmKtor"){
+         id = "tracking.jvm.ktor"
+         implementationClass = "JvmKtorConventionPlugin"
+      }
    }
 }

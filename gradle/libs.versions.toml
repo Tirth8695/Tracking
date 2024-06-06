@@ -135,7 +135,34 @@ tracking-android-application = {id = "tracking.android.application", version = "
 tracking-android-application-compose = {id = "tracking.android.application.compose", version = "unspecified"}
 tracking-android-library = {id = "tracking.android.library", version = "unspecified"}
 tracking-android-library-compose = {id = "tracking.android.library.compose", version = "unspecified"}
+tracking-android-feature-ui = {id = "tracking.android.feature.ui", version = "unspecified"}
+tracking-android-room = {id = "tracking.android.room", version = "unspecified"}
+tracking-jvm-library = {id = "tracking.jvm.library", version = "unspecified"}
+tracking-jvm-ktor = {id = "tracking.jvm.ktor", version = "unspecified"}
 
 
-
+[bundles]
+compose = [
+    "androidx-activity-compose",
+    "androidx-lifecycle-runtime-compose",
+    "androidx-lifecycle-viewmodel-compose",
+    "androidx-compose-material3",
+    "androidx-compose-ui",
+    "androidx-compose-ui-graphics",
+    "androidx-compose-ui-tooling-preview",
+]
+compose-debug = [
+"androidx-compose-ui-tooling",
+"androidx-compose-ui-test-manifest"
+]
+koin = ["koin-core","koin-android","koin-android-workmanager"]
+koin-compose = ["koin-core","koin-android","koin-android-workmanager","koin-androidx-compose"]
+ktor = [
+    "ktor-client-auth",
+    "ktor-client-cio",
+    "ktor-client-content-negotiation",
+    "ktor-client-core",
+    "ktor-client-logging",
+    "ktor-serialization-kotlinx-json"
+]
 
